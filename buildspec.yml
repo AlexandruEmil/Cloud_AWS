@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+  pre_build:
+    commands:
+      - echo Preparing to build the Docker image locally...
+  build:
+    commands:
+      - echo Building the Docker image...
+      - docker build -t yamil .
+  post_build:
+    commands:
+      - echo Running the Docker container locally for testing...
+      - docker run -d --name yamil-test yamil
+artifacts:
+  files:
+    - '**/*'
