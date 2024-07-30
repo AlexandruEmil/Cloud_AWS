@@ -1,4 +1,4 @@
-# Cloud_Project
+# Cloud_AWS
 A final year project for the Cloud Computing laboratory, in which we had to make 4 or more services comunicate with eatchother.
 for this i chose to focus on AWS by using the EC2, S3, λ fucntion, SNS & SQS.
 
